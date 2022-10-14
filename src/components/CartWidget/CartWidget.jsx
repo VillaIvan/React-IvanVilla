@@ -3,7 +3,7 @@ import "./CartWidget.css";
 function CartWidget() {
   return (
     <div>
-      <i className="bi bi-cart2"></i>
+      <i className="bi bi-cart2" />
     </div>
   );
 }

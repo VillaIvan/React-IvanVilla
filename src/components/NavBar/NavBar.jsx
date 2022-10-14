@@ -1,13 +1,13 @@
 import CartWidget from "../CartWidget/CartWidget";
+import Logo from "../Logo/Logo.jsx";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-secondary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand text-info" href="#">
-            eShop
-          </a>
+          <Logo />
           <button
             className="navbar-toggler"
             type="button"
@@ -23,21 +23,27 @@ function NavBar() {
             className="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav justify-content-center">
               <li className="nav-item">
-                <a className="nav-link text-info" aria-current="page" href="#">
+                <Link to={"/"} className="nav-link text-light p-3  fs-5">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-info" href="#">
-                  Novedades
-                </a>
+                <Link
+                  to={"/producto/"}
+                  className="nav-link text-light p-3  fs-5"
+                >
+                  Producto
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-info" href="#">
+                <Link
+                  to={"/producto"}
+                  className="nav-link text-light p-3  fs-5"
+                >
                   Productos
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

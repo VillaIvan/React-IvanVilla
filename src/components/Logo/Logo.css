@@ -1,0 +1,8 @@
+.logoContainer {
+  width: 80px;
+}
+
+.logoContainer a img {
+  width: 100%;
+  margin: auto;
+}
