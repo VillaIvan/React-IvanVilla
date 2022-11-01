@@ -9,11 +9,13 @@ function ItemList(props) {
         {props.productos.map((producto) => {
           return (
             <Item
+              key={producto.id}
               id={producto.id}
               img={producto.img}
               precio={producto.precio}
               producto={producto.producto}
               nombre={producto.nombre}
+              stock={producto.stock}
             />
           );
         })}

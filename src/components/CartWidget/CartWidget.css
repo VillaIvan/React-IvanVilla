@@ -2,3 +2,15 @@
   font-size: 2rem;
   color: #ffffff;
 }
+
+.spanTotal {
+  padding-left: 5px;
+  padding-right: 3px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 100%;
+}
+
+.cartMain {
+  text-decoration: none;
+}

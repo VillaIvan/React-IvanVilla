@@ -15,7 +15,7 @@ const data = [
     img: "https://i0.wp.com/suicidaltrendlp.com/wp-content/uploads/2022/08/pantalon-jimi-5.jpg?fit=1024%2C1520&ssl=1",
     nombre: "Jimy",
     precio: "15000",
-    stock: true,
+    stock: false,
     color: "azul",
     detail: "Pantalon Jean color azul recto",
   },
@@ -75,7 +75,7 @@ const data = [
     img: "https://i0.wp.com/suicidaltrendlp.com/wp-content/uploads/2022/08/reme-coca-and-sex-8.jpg?fit=1024%2C1520&ssl=1",
     nombre: "Coca Cola",
     precio: "4160",
-    stock: true,
+    stock: false,
     color: "rojo",
     detail: "Remera roja con estampado",
   },
@@ -88,11 +88,26 @@ export function getProductos() {
 }
 
 export function getUnProducto(idParams) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const prodReq = data.find((item) => {
       return item.id == idParams;
     });
 
-    setTimeout(() => resolve(prodReq), 2000);
+    setTimeout(() => {
+      if (prodReq === undefined)
+        reject(new Error("No se pudo encontrar el producto."));
+      else {
+        resolve(prodReq);
+      }
+    }, 2000);
+  });
+}
+
+export function getUnProductoByCategory(idCategoryParams) {
+  return new Promise((resolve) => {
+    let filterProduct = data.filter(
+      (item) => item.producto === idCategoryParams
+    );
+    setTimeout(() => resolve(filterProduct), 2000);
   });
 }

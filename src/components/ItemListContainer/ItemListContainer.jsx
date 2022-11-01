@@ -1,16 +1,24 @@
 import { useState, useEffect } from "react";
-
-import { getProductos } from "../../mockAPI/mockAPI";
+import { useParams } from "react-router-dom";
+import { getProductos, getUnProductoByCategory } from "../../mockAPI/mockAPI";
 import ItemList from "./ItemList";
 
 function ItemListContainer(props) {
   const [productos, setProductos] = useState([]);
+  const { categoryID } = useParams();
 
   useEffect(() => {
-    getProductos().then((data) => {
-      setProductos(data);
-    });
-  }, []);
+    setProductos([]);
+    if (categoryID === undefined) {
+      getProductos().then((data) => {
+        setProductos(data);
+      });
+    } else {
+      getUnProductoByCategory(categoryID).then((data) => {
+        setProductos(data);
+      });
+    }
+  }, [categoryID]);
 
   return (
     <div>

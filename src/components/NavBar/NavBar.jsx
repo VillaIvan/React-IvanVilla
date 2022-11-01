@@ -31,18 +31,18 @@ function NavBar() {
               </li>
               <li className="nav-item">
                 <Link
-                  to={"/producto/"}
+                  to={"/category/Remera"}
                   className="nav-link text-light p-3  fs-5"
                 >
-                  Producto
+                  Remeras
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  to={"/producto"}
+                  to={"/category/Pantalon"}
                   className="nav-link text-light p-3  fs-5"
                 >
-                  Productos
+                  Pantalones
                 </Link>
               </li>
             </ul>

@@ -5,23 +5,28 @@ import ItemDetail from "./ItemDetail.jsx";
 import { useParams } from "react-router-dom";
 
 function ItemDetailContainer(props) {
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState();
+  const [feedbackMsg, setFeedbackMsg] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    getUnProducto(id).then((data) => {
-      setProduct(data);
-    });
+    getUnProducto(id)
+      .then((data) => {
+        setProduct(data);
+      })
+      .catch((error) => {
+        console.log("Catch?");
+        setFeedbackMsg(error.message);
+      });
   }, [id]);
+
   return (
     <div>
-      <ItemDetail
-        id={product.id}
-        img={product.img}
-        precio={product.precio}
-        producto={product.producto}
-        nombre={product.nombre}
-      />
+      {feedbackMsg !== null ? (
+        <h4>Error: {feedbackMsg}</h4>
+      ) : (
+        <ItemDetail product={product} />
+      )}
     </div>
   );
 }
