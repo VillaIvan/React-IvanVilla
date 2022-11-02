@@ -25,6 +25,7 @@ function App() {
             />
             <Route path="/producto/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<CartView />} />
+
             <Route
               path="*"
               element={<h4>Error 404. Contacte al Administrador</h4>}

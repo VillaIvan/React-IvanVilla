@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <br>
+  <a href="https://github.com/VillaIvan"><img src="./components/assets/img/vvvv.svg" alt="Markdownify" width="200"></a>
+  <br>
+  vvvv Shop
+  <br>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">Esta webApp fue creada con el fin de gestionar un sistema de ventas a un comercio de ropa</h4>
 
-## Available Scripts
+<p align="center">
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-In the project directory, you can run:
+## How To Use
 
-### `npm start`
+Para clonar y correr esta app, vas a necesitar de [Git](https://git-scm.com) y [Node.js](https://nodejs.org/en/download/) que incluye a [npm](http://npmjs.com)).
+Luego es necesario seguir esta linea de comandos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+# Clonar este repositorio
+$ git clone https://github.com/VillaIvan/React-IvanVilla
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Ir al repositorio
+$ cd electron-markdownify
 
-### `npm test`
+# Instalar dependencias
+$ npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Correr la app
+$ npm start
+```
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este software incluye librerias como
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [SweetAlert2](https://sweetalert2.github.io/)
+- [Node.js](https://nodejs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [ReactRouter](https://reactrouter.com/en/main/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Support
 
-### `npm run eject`
+<a href="https://www.instagram.com/ivanfvilla/" target="_blank">Instagram</a>
+<a href="https://github.com/VillaIvan" target="_blank">GitHub</a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ivan Villa
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

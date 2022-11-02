@@ -32,7 +32,7 @@ function CartContextProvider(props) {
   function getTotalPrice() {
     let total = 0;
     cart.forEach((itemInCart) => {
-      total = total + itemInCart.count * itemInCart.price;
+      total = total + itemInCart.count * itemInCart.precio;
     });
     return total;
   }

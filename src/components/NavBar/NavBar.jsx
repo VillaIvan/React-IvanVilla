@@ -7,7 +7,9 @@ function NavBar() {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,8 +27,11 @@ function NavBar() {
           >
             <ul className="navbar-nav justify-content-center">
               <li className="nav-item">
-                <Link to={"/"} className="nav-link text-light p-3  fs-5">
-                  Home
+                <Link
+                  to={"/category/Campera"}
+                  className="nav-link text-light p-3  fs-5"
+                >
+                  Campera
                 </Link>
               </li>
               <li className="nav-item">

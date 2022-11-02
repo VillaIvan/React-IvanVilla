@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProductos, getUnProductoByCategory } from "../../mockAPI/mockAPI";
+import { getProductos, getUnProductoByCategory } from "../../services/Firebase";
+
 import ItemList from "./ItemList";
 
 function ItemListContainer(props) {

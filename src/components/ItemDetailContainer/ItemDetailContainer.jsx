@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getUnProducto } from "../../mockAPI/mockAPI";
+import { getUnProducto } from "../../services/Firebase";
 import ItemDetail from "./ItemDetail.jsx";
 import { useParams } from "react-router-dom";
 
